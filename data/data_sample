@@ -1,0 +1,2 @@
+https://geo.nyu.edu/catalog/nyu_2451_34572 -  this will be used to pull the details of the New York boroughs.
+Foursquare API will be used to get the details on the restaurant in the given borough (Manhattan) and all the reating over a period of 1 year.

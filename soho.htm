@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <style>#map_2742e9bc1f0949b3872171441ba7ef88 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_2742e9bc1f0949b3872171441ba7ef88" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_2742e9bc1f0949b3872171441ba7ef88 = L.map(
+        'map_2742e9bc1f0949b3872171441ba7ef88', {
+        center: [40.72288, -73.9987505],
+        zoom: 16,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_35deaebb0e97461ba06b79c0847b9230 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "subdomains": "abc"
+}).addTo(map_2742e9bc1f0949b3872171441ba7ef88);
+    
+            var circle_marker_49ddb634e8524a78973efd6f873f4942 = L.circleMarker(
+                [40.72105252664767, -73.99606868201784],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2742e9bc1f0949b3872171441ba7ef88);
+            
+    
+            var popup_cbcbd9edcf3640d994eb6dd0135d63f7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a029306265004e43b07676f833f3d9b6 = $('<div id="html_a029306265004e43b07676f833f3d9b6" style="width: 100.0%; height: 100.0%;">Name: Xi&#39;an Famous Foods, rating: 4.0, comparative rating: 20</div>')[0];
+                popup_cbcbd9edcf3640d994eb6dd0135d63f7.setContent(html_a029306265004e43b07676f833f3d9b6);
+            
+
+            circle_marker_49ddb634e8524a78973efd6f873f4942.bindPopup(popup_cbcbd9edcf3640d994eb6dd0135d63f7)
+            ;
+
+            
+        
+    
+            var circle_marker_24dfe1ff77ac480e81b289d46b6729e1 = L.circleMarker(
+                [40.72199, -73.99779],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2742e9bc1f0949b3872171441ba7ef88);
+            
+    
+            var popup_fd9d9d0257084c5caced72b4e9ec23a1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_cbcb7de6604241b78daa0c4f3932fa18 = $('<div id="html_cbcb7de6604241b78daa0c4f3932fa18" style="width: 100.0%; height: 100.0%;">Name: Osteria Morini, rating: 4.5, comparative rating: 19</div>')[0];
+                popup_fd9d9d0257084c5caced72b4e9ec23a1.setContent(html_cbcb7de6604241b78daa0c4f3932fa18);
+            
+
+            circle_marker_24dfe1ff77ac480e81b289d46b6729e1.bindPopup(popup_fd9d9d0257084c5caced72b4e9ec23a1)
+            ;
+
+            
+        
+    
+            var circle_marker_400128cbc63f438e9f4c3555b52e6788 = L.circleMarker(
+                [40.72263320366371, -73.99512464627406],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2742e9bc1f0949b3872171441ba7ef88);
+            
+    
+            var popup_779d1687a6ec434781ca2ad73c825b74 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ac710373dc3a4f939eb35b02f39cb65e = $('<div id="html_ac710373dc3a4f939eb35b02f39cb65e" style="width: 100.0%; height: 100.0%;">Name: Emporio, rating: 4.5, comparative rating: 18</div>')[0];
+                popup_779d1687a6ec434781ca2ad73c825b74.setContent(html_ac710373dc3a4f939eb35b02f39cb65e);
+            
+
+            circle_marker_400128cbc63f438e9f4c3555b52e6788.bindPopup(popup_779d1687a6ec434781ca2ad73c825b74)
+            ;
+
+            
+        
+    
+            var circle_marker_187353447f9c4129bc1438d5bacfef2f = L.circleMarker(
+                [40.722022, -73.997528],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2742e9bc1f0949b3872171441ba7ef88);
+            
+    
+            var popup_0f862bb7b8424bc886116c5817a3ded4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_fef1a34a141f46a3b77f8137d62b2c08 = $('<div id="html_fef1a34a141f46a3b77f8137d62b2c08" style="width: 100.0%; height: 100.0%;">Name: Jack&#39;s Wife Freda, rating: 4.5, comparative rating: 17</div>')[0];
+                popup_0f862bb7b8424bc886116c5817a3ded4.setContent(html_fef1a34a141f46a3b77f8137d62b2c08);
+            
+
+            circle_marker_187353447f9c4129bc1438d5bacfef2f.bindPopup(popup_0f862bb7b8424bc886116c5817a3ded4)
+            ;
+
+            
+        
+    
+            var circle_marker_081eb3e2be8147d5a1edf77e5e3dc622 = L.circleMarker(
+                [40.721936090419106, -73.99627935019758],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2742e9bc1f0949b3872171441ba7ef88);
+            
+    
+            var popup_6809bea7eeb2483dbf23a311d02291e1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_752aff8f3edb4582affe05f790242b73 = $('<div id="html_752aff8f3edb4582affe05f790242b73" style="width: 100.0%; height: 100.0%;">Name: Taïm Falafel and Smoothie Bar, rating: 4.0, comparative rating: 16</div>')[0];
+                popup_6809bea7eeb2483dbf23a311d02291e1.setContent(html_752aff8f3edb4582affe05f790242b73);
+            
+
+            circle_marker_081eb3e2be8147d5a1edf77e5e3dc622.bindPopup(popup_6809bea7eeb2483dbf23a311d02291e1)
+            ;
+
+            
+        
+    
+            var circle_marker_164528683c91462892305a1602b0903e = L.circleMarker(
+                [40.725482, -73.99995],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2742e9bc1f0949b3872171441ba7ef88);
+            
+    
+            var popup_006f2c3800d348edae33853a4d0d8bb5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6218c06bfcd34f7b9de2c61c83d1f0ee = $('<div id="html_6218c06bfcd34f7b9de2c61c83d1f0ee" style="width: 100.0%; height: 100.0%;">Name: Calexico Cart, rating: 4.0, comparative rating: 15</div>')[0];
+                popup_006f2c3800d348edae33853a4d0d8bb5.setContent(html_6218c06bfcd34f7b9de2c61c83d1f0ee);
+            
+
+            circle_marker_164528683c91462892305a1602b0903e.bindPopup(popup_006f2c3800d348edae33853a4d0d8bb5)
+            ;
+
+            
+        
+    
+            var circle_marker_fbb17009de0d4ba590abb41497b72e4b = L.circleMarker(
+                [40.722292, -73.996248],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2742e9bc1f0949b3872171441ba7ef88);
+            
+    
+            var popup_eadbe1ea32d848b492112fec29a02d0e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0c9cda01778044ed8f05ed37b75ee332 = $('<div id="html_0c9cda01778044ed8f05ed37b75ee332" style="width: 100.0%; height: 100.0%;">Name: Ruby&#39;s Café, rating: 5.0, comparative rating: 14</div>')[0];
+                popup_eadbe1ea32d848b492112fec29a02d0e.setContent(html_0c9cda01778044ed8f05ed37b75ee332);
+            
+
+            circle_marker_fbb17009de0d4ba590abb41497b72e4b.bindPopup(popup_eadbe1ea32d848b492112fec29a02d0e)
+            ;
+
+            
+        
+    
+            var circle_marker_815bb06e9ea4437786849a52148ec78d = L.circleMarker(
+                [40.7211844, -73.9971105],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2742e9bc1f0949b3872171441ba7ef88);
+            
+    
+            var popup_3bbf88d09c2641318dbd908262e76180 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ae0185797d1d459fa3da29525b693f91 = $('<div id="html_ae0185797d1d459fa3da29525b693f91" style="width: 100.0%; height: 100.0%;">Name: sweetgreen, rating: 3.5, comparative rating: 13</div>')[0];
+                popup_3bbf88d09c2641318dbd908262e76180.setContent(html_ae0185797d1d459fa3da29525b693f91);
+            
+
+            circle_marker_815bb06e9ea4437786849a52148ec78d.bindPopup(popup_3bbf88d09c2641318dbd908262e76180)
+            ;
+
+            
+        
+    
+            var circle_marker_0738b6d6b4dc4f2f8696dbf0141d0448 = L.circleMarker(
+                [40.72474364215556, -73.99866155548237],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2742e9bc1f0949b3872171441ba7ef88);
+            
+    
+            var popup_6fc93fd740ed4008a8bd69cfc62abf83 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_87f41bb1ddd14dcd9303ab272a4bf1c5 = $('<div id="html_87f41bb1ddd14dcd9303ab272a4bf1c5" style="width: 100.0%; height: 100.0%;">Name: Mercer Kitchen, rating: 3.5, comparative rating: 12</div>')[0];
+                popup_6fc93fd740ed4008a8bd69cfc62abf83.setContent(html_87f41bb1ddd14dcd9303ab272a4bf1c5);
+            
+
+            circle_marker_0738b6d6b4dc4f2f8696dbf0141d0448.bindPopup(popup_6fc93fd740ed4008a8bd69cfc62abf83)
+            ;
+
+            
+        
+    
+            var circle_marker_c9735d8c4b48456cb4f7e0f66f51e72c = L.circleMarker(
+                [40.720222, -73.998327],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2742e9bc1f0949b3872171441ba7ef88);
+            
+    
+            var popup_63ac7a5b20034f87a08099be3a9a3a48 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ba38602f9eab46138ef45082de52f966 = $('<div id="html_ba38602f9eab46138ef45082de52f966" style="width: 100.0%; height: 100.0%;">Name: Maman, rating: 3.5, comparative rating: 11</div>')[0];
+                popup_63ac7a5b20034f87a08099be3a9a3a48.setContent(html_ba38602f9eab46138ef45082de52f966);
+            
+
+            circle_marker_c9735d8c4b48456cb4f7e0f66f51e72c.bindPopup(popup_63ac7a5b20034f87a08099be3a9a3a48)
+            ;
+
+            
+        
+    
+            var circle_marker_f4c4759fb1f549f187b321a40acd91ec = L.circleMarker(
+                [40.72270549271865, -73.99819850921631],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2742e9bc1f0949b3872171441ba7ef88);
+            
+    
+            var popup_b1da748c3e4e458f8d5f55b59789c790 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2510e66a967a406fb95d6d561073187b = $('<div id="html_2510e66a967a406fb95d6d561073187b" style="width: 100.0%; height: 100.0%;">Name: Balthazar, rating: 3.5, comparative rating: 10</div>')[0];
+                popup_b1da748c3e4e458f8d5f55b59789c790.setContent(html_2510e66a967a406fb95d6d561073187b);
+            
+
+            circle_marker_f4c4759fb1f549f187b321a40acd91ec.bindPopup(popup_b1da748c3e4e458f8d5f55b59789c790)
+            ;
+
+            
+        
+    
+            var circle_marker_e730d59694554af9b19a87b574485c59 = L.circleMarker(
+                [40.72144922191938, -73.99761378765106],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2742e9bc1f0949b3872171441ba7ef88);
+            
+    
+            var popup_7bcaad8336d849208b01796074dcbe0a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e6f90761e5564f3bbdf5b41efe7692cf = $('<div id="html_e6f90761e5564f3bbdf5b41efe7692cf" style="width: 100.0%; height: 100.0%;">Name: La Esquina, rating: 4.0, comparative rating: 9</div>')[0];
+                popup_7bcaad8336d849208b01796074dcbe0a.setContent(html_e6f90761e5564f3bbdf5b41efe7692cf);
+            
+
+            circle_marker_e730d59694554af9b19a87b574485c59.bindPopup(popup_7bcaad8336d849208b01796074dcbe0a)
+            ;
+
+            
+        
+    
+            var circle_marker_7635d6ae9c0d41d5aa46ea501916752a = L.circleMarker(
+                [40.724703, -73.9983278],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2742e9bc1f0949b3872171441ba7ef88);
+            
+    
+            var popup_5f7bbbc462d24b70a2feda74e9f3026c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c8a5d017ba1f46acb2616acfce1b7e01 = $('<div id="html_c8a5d017ba1f46acb2616acfce1b7e01" style="width: 100.0%; height: 100.0%;">Name: Lure Fishbar, rating: 4.0, comparative rating: 8</div>')[0];
+                popup_5f7bbbc462d24b70a2feda74e9f3026c.setContent(html_c8a5d017ba1f46acb2616acfce1b7e01);
+            
+
+            circle_marker_7635d6ae9c0d41d5aa46ea501916752a.bindPopup(popup_5f7bbbc462d24b70a2feda74e9f3026c)
+            ;
+
+            
+        
+    
+            var circle_marker_dacfdfcb64e143d2a930a1037030a3e6 = L.circleMarker(
+                [40.72192791798716, -73.99651188343245],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2742e9bc1f0949b3872171441ba7ef88);
+            
+    
+            var popup_3279b68fb2104058b383da0433ff95da = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a25433d5d93a44e2b7ee04a0fcccfe12 = $('<div id="html_a25433d5d93a44e2b7ee04a0fcccfe12" style="width: 100.0%; height: 100.0%;">Name: CAVA, rating: 4.5, comparative rating: 7</div>')[0];
+                popup_3279b68fb2104058b383da0433ff95da.setContent(html_a25433d5d93a44e2b7ee04a0fcccfe12);
+            
+
+            circle_marker_dacfdfcb64e143d2a930a1037030a3e6.bindPopup(popup_3279b68fb2104058b383da0433ff95da)
+            ;
+
+            
+        
+    
+            var circle_marker_caddf69d463b4e62935ec5b9f10b83ed = L.circleMarker(
+                [40.722726166658305, -73.99599305184151],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2742e9bc1f0949b3872171441ba7ef88);
+            
+    
+            var popup_c6451326573e462e9856b6efb32a042e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b05841e2f13e4abbb9c3d22103fd8241 = $('<div id="html_b05841e2f13e4abbb9c3d22103fd8241" style="width: 100.0%; height: 100.0%;">Name: Rubirosa Ristorante, rating: 4.0, comparative rating: 6</div>')[0];
+                popup_c6451326573e462e9856b6efb32a042e.setContent(html_b05841e2f13e4abbb9c3d22103fd8241);
+            
+
+            circle_marker_caddf69d463b4e62935ec5b9f10b83ed.bindPopup(popup_c6451326573e462e9856b6efb32a042e)
+            ;
+
+            
+        
+    
+            var circle_marker_d05c616bea9c446e9a526e304b01e930 = L.circleMarker(
+                [40.72463779438282, -73.99654971050707],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2742e9bc1f0949b3872171441ba7ef88);
+            
+    
+            var popup_54a485e8ab3149a787f523bbe23107c3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_71f04c55e1bd4c39a4e602a5e8c9fc52 = $('<div id="html_71f04c55e1bd4c39a4e602a5e8c9fc52" style="width: 100.0%; height: 100.0%;">Name: Housing Works Bookstore Cafe, rating: 4.0, comparative rating: 5</div>')[0];
+                popup_54a485e8ab3149a787f523bbe23107c3.setContent(html_71f04c55e1bd4c39a4e602a5e8c9fc52);
+            
+
+            circle_marker_d05c616bea9c446e9a526e304b01e930.bindPopup(popup_54a485e8ab3149a787f523bbe23107c3)
+            ;
+
+            
+        
+    
+            var circle_marker_d1b2aa52f8c74219beab2a00677dd5d8 = L.circleMarker(
+                [40.72114442373172, -73.99796266127038],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2742e9bc1f0949b3872171441ba7ef88);
+            
+    
+            var popup_6d54df970dfd425f876bccc0dcca35ba = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0b5272bb1f0f487ba4f0d1cad2641e18 = $('<div id="html_0b5272bb1f0f487ba4f0d1cad2641e18" style="width: 100.0%; height: 100.0%;">Name: Despaña, rating: 4.3, comparative rating: 4</div>')[0];
+                popup_6d54df970dfd425f876bccc0dcca35ba.setContent(html_0b5272bb1f0f487ba4f0d1cad2641e18);
+            
+
+            circle_marker_d1b2aa52f8c74219beab2a00677dd5d8.bindPopup(popup_6d54df970dfd425f876bccc0dcca35ba)
+            ;
+
+            
+        
+    
+            var circle_marker_3e4ec1a72cbc4ebe90e6a9f46249cc82 = L.circleMarker(
+                [40.723019825, -73.995854],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2742e9bc1f0949b3872171441ba7ef88);
+            
+    
+            var popup_753113d85e91487e8c3f5dcfd58dfe42 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_93dc2ab35e2c47638fe994146e5cae38 = $('<div id="html_93dc2ab35e2c47638fe994146e5cae38" style="width: 100.0%; height: 100.0%;">Name: Parm, rating: 4.0, comparative rating: 3</div>')[0];
+                popup_753113d85e91487e8c3f5dcfd58dfe42.setContent(html_93dc2ab35e2c47638fe994146e5cae38);
+            
+
+            circle_marker_3e4ec1a72cbc4ebe90e6a9f46249cc82.bindPopup(popup_753113d85e91487e8c3f5dcfd58dfe42)
+            ;
+
+            
+        
+    
+            var circle_marker_055fa52aff5641a0b61628ccea659350 = L.circleMarker(
+                [40.721637542248196, -73.99747002195814],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2742e9bc1f0949b3872171441ba7ef88);
+            
+    
+            var popup_1c1ffdcab7be40dd82c8ec72239b854e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3c4dc2aaf1e24790a39ffdc1ec16e214 = $('<div id="html_3c4dc2aaf1e24790a39ffdc1ec16e214" style="width: 100.0%; height: 100.0%;">Name: Champion Pizza Soho, rating: 4.5, comparative rating: 2</div>')[0];
+                popup_1c1ffdcab7be40dd82c8ec72239b854e.setContent(html_3c4dc2aaf1e24790a39ffdc1ec16e214);
+            
+
+            circle_marker_055fa52aff5641a0b61628ccea659350.bindPopup(popup_1c1ffdcab7be40dd82c8ec72239b854e)
+            ;
+
+            
+        
+    
+            var circle_marker_2102b5675896488196f46bd7389a5d22 = L.circleMarker(
+                [40.721038591047176, -73.99675011634827],
+                {
+  "bubblingMouseEvents": true,
+  "color": "black",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.9,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_2742e9bc1f0949b3872171441ba7ef88);
+            
+    
+            var popup_eb6e009a095940b8908ed295ea561e61 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e978280288f5493fa24174148a95b10c = $('<div id="html_e978280288f5493fa24174148a95b10c" style="width: 100.0%; height: 100.0%;">Name: Pasquale Jones, rating: 4.5, comparative rating: 1</div>')[0];
+                popup_eb6e009a095940b8908ed295ea561e61.setContent(html_e978280288f5493fa24174148a95b10c);
+            
+
+            circle_marker_2102b5675896488196f46bd7389a5d22.bindPopup(popup_eb6e009a095940b8908ed295ea561e61)
+            ;
+
+            
+        
+</script>

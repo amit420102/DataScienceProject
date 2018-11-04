@@ -15,8 +15,8 @@ latitude = location.latitude
 longitude = location.longitude
 
 ## use the frousquare credential for the venue information to be fetched from foursquare API
-CLIENT_ID = '4FG3Q3JIXDPNDTRRAG00HN1R4KIOKTAZI3W30XB2YVVXRXCW' # your Foursquare ID
-CLIENT_SECRET = 'JKSBZKIPB4GCLGQFWITVLYWIJP23ISTOQPGLY1JSMOWIUMEO' # your Foursquare Secret
+CLIENT_ID = 'XXXX' # your Foursquare ID
+CLIENT_SECRET = 'XXXX' # your Foursquare Secret
 VERSION = '20180605' # Foursquare API version
 
 ## create foursquare API call URL for venue seacrh for Soho, NY. The search uses below paramteres

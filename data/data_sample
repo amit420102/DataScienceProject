@@ -1,2 +1,2 @@
 GET https://api.foursquare.com/v2/venues/explore - this API will be used to fetch details of all the venues around Soho neighborhood. I have restricted the search result to return 20 values for easy comparison.
-I have also kept the final dataset data in the data section which was used for final plotting of the venues with comparative rating on the map.
+I have also kept the final dataset data in the data section which was used for final plotting of the venues with comparative rating on the map. File is sorted on final_rating column in ascending order.

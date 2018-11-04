@@ -1,8 +1,19 @@
 # Finalproject
-Business problem - In current world when a user does a web search for a restaurant in his/her area it returns the point in time rating of business and does not give a comparative rating of venue compared to other venues in the area. 
-As part of this project, I am intending to provide a plotting of how an individual venue is rated in comparoson to other venues in the same area. In order to get the data I am intending to use Frousquare API for venues explore around an area. For my project i have used Soho neihgborhood in Manhattan borough to get the details.
-For ease of projection the details i have only fetched 20 restaurants in Soho neighborhood. We have details of venue id, Name, Category, Latitude and Longitude for the venue returned by the venue explore API. This is stored in dataset nearby_venues.
-Plan was to use another Foursquare API to get details for each venue (Venue details API). But I encountered an error with Quota exceeded while making API calls. So i created a dataset in python which had mocked up data created for the 20 venues fetched above in dataset nearby_venues. This is stored in dataset final_pd.
-Merge both the datasets final_pd and nearby_venues on venue id column. Now final_pd as columns Id, Name, Category, Latitude, Longitude, price, likes and ratings.
-The final merged dataset is also stored in the data folder in excel format. 
-Now i have created a logic to give weightage to 3 different columns ratings, price and likes. I have used 50% weightage for ratings fetched from Foursqaure, 40% weightage to the average price indicator from Foursquare (it has values from 1 to 4, 1 means less costly and 4 being highest costly) and 10% weghtage to the likes returned from Fourquare (as lots of people might not be actually registerng likes on the website). So i have used formula of (0.5 * ratings + (0.1 * likes/50) - 0.4 * price). Here you can notice that i have divided likes by 50. I wanted to have likes represented as categorical value as it ranged from under 50 to 300. So all the values of likes ranged from 1 to 6 and then used the same in the formula. This gives the comparative rating of each of the venue and more clarity on which restaurant is more likely to be chosen in case of venues which have same ratings (as cost or likes can influence the choice being made).
+Business problem - In current world when a user does a web search for a restaurant in his/her area it returns the point in time rating of business and does not give a comparative rating of venue compared to other venues in the area. For example, a rating of 4 does not give clear picture on how it compares to other restaurant with same rating in the area. Any user who is searching for restaurants on web are end users.
+
+Data to be used: I have mentioned the data that will be used for the project under data folder. I have used below Foursquare API to fetch the venues in a neighborhood:
+https://api.foursquare.com/v2/venues/explore?&client_id={}&client_secret={}&v={}&ll={},{}&radius={}&limit={}&query={}
+I have also mentioned the final dataset which was created to map the 20 venues on the map with actual rating and comparative rating of the restaurant. This is stored in the Data folder.
+
+Methodology: I have done exploratory data analysis to use the details fetched for each of the venues and then compare the ratings, price and likes for the venue to create a comparative ranking for the venues.
+
+Results: As part of project I have mapped 20 restaurants in Soho neighborhood, in Manhatttan borough based on their comparative rating. Top 10 are highlighted as green and bottom 10 are highlighted as red.
+
+Please refer the final dataset used for plotting in the data section.
+
+Observation: Here we can observe that the comparative rating is done based on actual rating, average price and likes returned for each venue. 
+•	We can see restaurants Pasquale Jones and Champion Pizza Soho have same rating and price indicator but different likes count. The comparative rating for Pasquale Jones is higher than Champion Pizza Soho as former had higher number of likes.
+•	Take example of restaurants sweetgreen and Ruby’s Café. Even though Ruby’s Café has 5 rating and sweetgreen is rated 3.5 we see that comparative rating of sweetgreen is almost same as Ruby’s Café. This is because the price indicator for Ruby’s Café is higher than sweetgreen.
+For my exploratory analysis I have given weightage of 50% to ratings, 40% to the price indicator and 10% to likes.
+
+Conclusion: This exploratory analysis compares the rating of the restaurant, price indicator of the restaurant and number of likes registered for the restaurant and gives a comparative ranking for the restaurants in the area. Here we have given 50% weightage to Rating, 40% weightage to Price indicator and 10% weightage to likes. This goes to show that even a restaurant with slightly higher rating can be less preferred if the price indicator is used in the ranking as cost plays a big part in the decision making on choosing the restaurant.
